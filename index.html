@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PORTAFOLIO</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<style>
+			body {
+				background-color: #000000;
+				margin: 0;
+				cursor: move;
+				overflow: hidden;
+			}
+
+			a {
+				color: #ffffff;
+			}
+			nav{
+             height: 4.5rem;
+             background: #fff;
+
+            }
+            .button-collapse{
+             color:#868484;
+            }
+            nav ul a{
+             color: #444;
+             font-size: 1.2rem;	
+            }
+
+			#info {
+				position: absolute;
+				width: 100%;
+				color: #ffffff;
+				padding: 5px;
+				font-family: Monospace;
+				font-size: 13px;
+				font-weight: bold;
+				text-align: center;
+				z-index: 1;
+			}
+			.user-view{
+			   cursor: pointer;	
+			}
+			
+			i.close-menu{
+               color: #000;
+             }
+			i.close-menu:hover {
+			  opacity: 0.8;	
+			  color: darkgray ;
+			  
+			}
+			a i.menu-list {
+    
+		    font-size: 3rem;
+		    position: absolute;
+		    color: #447d96bd;
+			}
+			nav a.button-collapse {
+    		  display: block; 
+			}
+			.photo-menu{
+			  width: 45%;
+   			  margin-left: 30%;
+			}
+			.list-responsive {
+			  margin-left: 9rem;
+			  font-size: 20px;
+			  font-weight: 500;
+			  position: relative;
+			}
+			span.material-icons {
+		    font-size: 2.8rem;
+		    position: absolute;
+		    margin-left: 5rem;
+		    margin-top: 1rem;
+			}
+			span.name{
+		    font-size: 1.5rem;
+		    text-align: center;		
+		    font-weight: 700;		
+			}
+			img.gif-menu{
+			 width:20%;	
+			}
+			section.data-main {
+		    position: relative;
+		    margin-top: 2rem;
+		    margin-left: 25%;
+		    z-index: 998;
+		    float: left;
+		    cursor: pointer;
+			}
+			section.data-biografy{
+			position: relative;
+		    margin-left: 10%;
+		    z-index: 998;
+		    float: left;
+		   	
+			}
+			div.create-img{
+			 position: absolute;
+			}
+			input.btn-float{
+		   /* margin-left: 8rem; */
+		    border: 1.5px solid #d0d0d0;
+		    background: #f2f2f28a;
+		    border-radius: 5px;
+		    margin-bottom: 1rem;
+		    font-weight: 700;
+		    color: #5c5a5a;
+		    
+			}
+			input.btn-float:hover{
+			 background-color: #eee;
+			 opacity: 0.4;
+			 color: #000;
+			 border: 1.5px solid #bdbdbd;
+			 font-weight: 700;
+			 border-radius: 5px;
+			 font-size: 1.2rem;
+			}
+			span.down-cv{
+			  font-size: 1.8rem;
+			  position: absolute;
+			  margin-top: 7px;
+			  margin-left: 0.25rem;
+			  color: #757575;
+			}
+			a.logo-init{
+			  color:#000;
+			  margin-left: 19%;
+			}
+			p.resume{
+			text-align: justify;
+			text-align: justify;
+		    background: #fafafaa6;
+		    font-weight: 900;
+		    font-size: 1.3rem;
+		    border: 1px solid #eee;
+		    /* opacity: 0.9; */
+		    color: #5a5a5a;  
+			}
+			p.resume:hover{
+			text-align: justify;
+			text-align: justify;
+		    background: #fafafaa6;
+		    font-weight: 900;
+		    font-size: 1.4rem;
+		    border: 1px solid #eee;
+		    /* opacity: 0.9; */
+		    color: #5a5a5a;  
+
+			}
+			span.color-one{
+              color: rgb(67, 82, 145);
+    		  font-weight: 1000;
+    		  font-size: 1.39rem;
+			}
+			span.color-two{
+			 color: #000;	
+			}
+			span.color-three{
+			  color: rgb(68, 125, 150);
+    		  font-size: 1.38rem;
+			}
+			span.color-four{
+		 	 font-family: serif;
+		 	 color:rgb(39, 39, 39);
+			}
+
+		</style>
+	</head>
+	<body>
+		<nav>
+	     <div class="nav-wrapper container">
+	      <a href="#" class="brand-logo logo-init"><img class="img-responsive" src="textures/cube/Bridge2/logome.png"></a> 
+	      <a href="#" data-activates="slide-out" class="btn-floating btn-large waves-effect waves-light white button-collapse"><i class="material-icons menu-list">menu</i></a> 	      
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	       <li><a href="#">HOME</a></li>
+	       <li><a href="#">PORTAFOLIO</a></li>
+	       <li><a href="#">CONTACTO</a></li>
+	      </ul>
+	     </div>
+	    <!--cascasdasd -->
+	 	<ul id="slide-out" class="side-nav">
+	    <li>
+	      <div class="user-view">
+	      <div>
+	      <p class=" right"><i class="close-menu material-icons">clear</i></p>
+	      </div> 	
+	      <br>	
+	      <a href="#!user"><img class="img-responsive circle photo-menu" src="textures/cube/Bridge2/fotolinkedin.png"></a>
+	      <br>
+	      <br>	      
+	    </div></li>
+	    <li><div class="divider"></div></li>
+	    <li><a href="#!name"><span class="name">MERCADO RIVAS YANINA C.</span></a></li>
+	    <li><div class="divider"></div></li>
+	    <li><a href="#!"><span class="material-icons ">assignment_ind</span><span class="list-responsive">Sobre mí</span></a></li>
+	    <li><div class="divider"></div></li>
+	    <li><a href="#!"><span class="material-icons">credit_card</span><span class="list-responsive">Portafolio</span></a></li>
+	    <li><div class="divider"></div></li>
+	    <li><a class="subheader"><span class="material-icons">phone_android</span><span  class="list-responsive">Contacto</span></a></li>
+	    </ul>
+	     
+	 </nav>
+ <section class="data-main">	 
+    <div class="container">
+    <div class="row">
+	  <div class="col s12 l12 div-front">
+		<div class="file-field col s6 l6 m8 pull-s3 pull-m1 push-l2">
+		<span class="down-cv material-icons">file_download</span><input type="button" class="btn btn-flat btn-float" value="CV Download">
+		</div>
+		<div class="col s6 l6 m4 pull-s1 push-m2 push-l10">
+		<input type="button" class="btn btn-flat btn-float" value="Datos">
+		</div>		
+      </div>      
+     </div> 
+	</div>
+    </div>
+   
+ </section> 
+ <section class="data-biografy">
+   <div class="container">
+      <div class="row">
+   	  <div class="col s12 m12 l12 pull-s1 push-l1  biografy">
+         <p class="resume col s12 m10 l7 "><span class="color-one">Bachiller en Ingeniería de Sistemas, </span>de la UNCP <span class = "color-two">Egresada Front end  Developer</span> de Laboratoria interesada en <span class = "color-three">Backend y/o Full stack Developer </span>por lo cúal declaro ser perseverante, con alta capacidad de aprendizaje, análisis funcional, trabajo en equipo y autodidacta para seguir inmersa en otras tecnologías como <span class="color-four">[JAVA,ANDROID,PLSQL,SQL.]</span></p>  
+	  </div>
+    </div>  
+ </section>		   
+		<script src="build/three.js"></script>
+		<script src="js/renderers/CSS3DRenderer.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+		<!--<div id="info"><a href="http://threejs.org" target="_blank" rel="noopener">three.js css3d</a> - panorama demo. cubemap by <a href="http://www.humus.name/index.php?page=Textures" target="_blank" rel="noopener">Humus</a>.</div>-->
+
+		<script>
+		     // Initialize collapse button
+  			$(".button-collapse").sideNav({menuWidth: 380,draggable: true});
+  			// menu responsive
+  		         
+  			$('.close-menu').on('click',function(){
+  				 $('.button-collapse').sideNav('hide');
+  				 
+  			});
+
+			var camera, scene, renderer;
+			var geometry, material, mesh;
+			var target = new THREE.Vector3();
+
+			var lon = 90, lat = 0;
+			var phi = 0, theta = 0;
+
+			var touchX, touchY;
+
+			init();
+			animate();
+
+			function init() {
+
+				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1000 );
+
+				scene = new THREE.Scene();
+
+				var sides = [
+					{
+						url: 'textures/cube/Bridge2/posx5.jpg',
+						position: [ -512, 0, 0 ],
+						rotation: [ 0, Math.PI / 2, 0 ]
+					},
+					{
+						url: 'textures/cube/Bridge2/negx5.jpg',
+						position: [ 512, 0, 0 ],
+						rotation: [ 0, -Math.PI / 2, 0 ]
+					},
+					{
+						url: 'textures/cube/Bridge2/posy5.jpg',
+						position: [ 0,  512, 0 ],
+						rotation: [ Math.PI / 2, 0, Math.PI ]
+					},
+					{
+						url: 'textures/cube/Bridge2/negy5.jpg',
+						position: [ 0, -512, 0 ],
+						rotation: [ - Math.PI / 2, 0, Math.PI ]
+					},
+					{
+						url: 'textures/cube/Bridge2/posz5.jpg',
+						position: [ 0, 0,  512 ],
+						rotation: [ 0, Math.PI, 0 ]
+					},
+					{
+						url: 'textures/cube/Bridge2/negz5.jpg',
+						position: [ 0, 0, -512 ],
+						rotation: [ 0, 0, 0 ]
+					}
+				];
+
+				for ( var i = 0; i < sides.length; i ++ ) {
+
+					var side = sides[ i ];
+
+					var element = document.createElement( 'img' );
+
+					element.classList.add('create-img');
+					element.width = 1026; // 2 pixels extra to close the gap.
+					element.src = side.url;
+
+					var object = new THREE.CSS3DObject( element );
+					object.position.fromArray( side.position );
+					object.rotation.fromArray( side.rotation );
+					scene.add( object );
+
+				}
+
+				renderer = new THREE.CSS3DRenderer();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				document.body.appendChild( renderer.domElement );
+
+				//
+
+				document.addEventListener( 'mousedown', onDocumentMouseDown, false );
+				document.addEventListener( 'wheel', onDocumentMouseWheel, false );
+
+				document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+				document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+
+				window.addEventListener( 'resize', onWindowResize, false );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			function onDocumentMouseDown( event ) {
+
+				event.preventDefault();
+
+				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+				document.addEventListener( 'mouseup', onDocumentMouseUp, false );
+
+			}
+
+			function onDocumentMouseMove( event ) {
+
+				var movementX = event.movementX || event.mozMovementX || event.webkitMovementX || 0;
+				var movementY = event.movementY || event.mozMovementY || event.webkitMovementY || 0;
+
+				lon -= movementX * 0.1;
+				lat += movementY * 0.1;
+
+			}
+
+			function onDocumentMouseUp( event ) {
+
+				document.removeEventListener( 'mousemove', onDocumentMouseMove );
+				document.removeEventListener( 'mouseup', onDocumentMouseUp );
+
+			}
+
+			function onDocumentMouseWheel( event ) {
+
+				var fov = camera.fov + event.deltaY * 0.05;
+
+				camera.fov = THREE.Math.clamp( fov, 10, 75 );
+
+				camera.updateProjectionMatrix();
+
+			}
+
+			function onDocumentTouchStart( event ) {
+
+				event.preventDefault();
+
+				var touch = event.touches[ 0 ];
+
+				touchX = touch.screenX;
+				touchY = touch.screenY;
+
+			}
+
+			function onDocumentTouchMove( event ) {
+
+				event.preventDefault();
+
+				var touch = event.touches[ 0 ];
+
+				lon -= ( touch.screenX - touchX ) * 0.1;
+				lat += ( touch.screenY - touchY ) * 0.1;
+
+				touchX = touch.screenX;
+				touchY = touch.screenY;
+
+			}
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+				lon +=  0.1;
+				lat = Math.max( - 85, Math.min( 85, lat ) );
+				phi = THREE.Math.degToRad( 90 - lat );
+				theta = THREE.Math.degToRad( lon );
+
+				target.x = Math.sin( phi ) * Math.cos( theta );
+				target.y = Math.cos( phi );
+				target.z = Math.sin( phi ) * Math.sin( theta );
+
+				camera.lookAt( target );
+
+				renderer.render( scene, camera );
+
+			}
+
+		</script>   
+
+	</body>
+</html>
